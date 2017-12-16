@@ -10,6 +10,7 @@
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "eris": "abalabahaha/eris#master",
+    "graceful-fs": "^4.1.11",
     "path": "^0.12.7"
   },
   "devDependencies": {},
