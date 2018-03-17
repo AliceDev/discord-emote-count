@@ -1,3 +1,4 @@
 {
-    "prefix": "??"
+    "prefix": "??",
+    "insertionThrottle": 10000
 }

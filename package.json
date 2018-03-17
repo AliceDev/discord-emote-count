@@ -6,15 +6,21 @@
   "directories": {
     "lib": "lib"
   },
+  "engines": {
+    "node": ">=8"
+  },
   "dependencies": {
+    "cassandra-driver": "^3.4.1",
     "chai": "^4.1.2",
     "chai-as-promised": "^7.1.1",
     "eris": "abalabahaha/eris#master",
     "graceful-fs": "^4.1.11",
+    "lodash": "^4.17.5",
     "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
