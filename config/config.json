@@ -1,3 +1,5 @@
 {
-    "prefix": "??"
+    "prefix": "??",
+    "considerationPeriod": 15000,
+    "topNEntries": 5
 }
