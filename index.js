@@ -13,7 +13,7 @@ const Database = require("./lib/core/CassandraDatabase");
 const auth = require("./config/auth.json");
 const { bashColors: { none, blue } } = require("./lib/core/Utils");
 
-Database.checkTable();
+Database.connect();
 const client = new Client(auth.token, Database);
 client.connect();
 
