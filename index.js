@@ -19,7 +19,7 @@ const Database = require("./lib/core/CassandraDatabase");
 const backgroundEnv = Object.assign({}, process.env, { BOT_TOKEN: auth.token });
 
 async function startup() {
-    await Database.connect(dropTables, wipeData, true);
+    await Database.connect({ dropTables, wipeData, createTables: true });
     const backgroundProcess = child_process.fork("./lib/Background", [], { env: backgroundEnv });
     console.log("Background process PID:" + blue, backgroundProcess.pid, none);
 
