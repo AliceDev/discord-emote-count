@@ -3,11 +3,13 @@ const commandLineArgs = {
     COLORS: ["--colors", "-c"],
     WIPE_DATA: ["--wipe-data"],
     DROP_TABLES: ["--drop-tables"],
+    NO_BACKFILLING: ["--no-backfill"],
 };
 
 // TODO: Make this generic when there will be too many
 process.env.DEBUGGING = process.argv.some(e => commandLineArgs.DEBUGGING.includes(e));
 process.env.COLORS = process.argv.some(e => commandLineArgs.COLORS.includes(e));
+process.env.NO_BACKFILLING = process.argv.some(e => commandLineArgs.NO_BACKFILLING.includes(e));
 const wipeData = process.argv.some(e => commandLineArgs.WIPE_DATA.includes(e));
 const dropTables = process.argv.some(e => commandLineArgs.DROP_TABLES.includes(e));
 
