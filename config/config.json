@@ -1,5 +1,7 @@
 {
     "prefix": "??",
     "considerationPeriod": 15000,
-    "topNEntries": 5
+    "topNEntries": 5,
+    "statusInterval": 60000,
+    "customRotatingStatuses": []
 }
