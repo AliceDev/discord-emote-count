@@ -2,5 +2,7 @@
     "prefix": "??",
     "considerationPeriod": 15000,
     "topNEntries": 5,
-    "logChannel": ""
+    "logChannel": "",
+    "statusInterval": 60000,
+    "customRotatingStatuses": []
 }
