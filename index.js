@@ -20,6 +20,9 @@ const child_process = require("child_process");
 const Client = require("./lib/Client.js");
 const Database = require("./lib/core/CassandraDatabase");
 const backgroundEnv = Object.assign({}, process.env, { BOT_TOKEN: auth.token });
+if (process.env.DEBUGGING === "true") {
+    logger.setDefaultLevel("debug");
+}
 logger.debug("Env:", backgroundEnv);
 
 async function startup() {
