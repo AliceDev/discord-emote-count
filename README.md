@@ -14,7 +14,7 @@ First, you'll need a new bot account
 2. Click "new application". Give it the name, picture, and description you want.
 3. Click "Create Bot User" and click "Yes, Do It!" when the dialog pops up.
 4. Copy down the `token`. This is what is used to log the bot in.
-5. Put your `token` in an environment variable named `EMOJILYTICS_TOKEN`.
+5. Put your `token` in an environment variable named `BOT_EMOTE_TOKEN`.
 If you don't know how to do that, google "How to define environment variable on" followed by your operating system (Windows, Linux, macOS, etc.)
 
 Then, you'll need to invite the bot on a server
