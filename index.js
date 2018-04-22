@@ -27,8 +27,8 @@ async function startup(bot_token) {
     client.connect();
 }
 
-if (process.env.EMOJILYTICS_TOKEN) {
-    startup(process.env.EMOJILYTICS_TOKEN);
+if (process.env.EMOTE_BOT_TOKEN) {
+    startup(process.env.EMOTE_BOT_TOKEN);
 } else {
     console.error("Your bot token is not defined.");
 }
