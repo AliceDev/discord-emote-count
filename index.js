@@ -13,25 +13,28 @@ process.env.NO_BACKFILLING = process.argv.some(e => commandLineArgs.NO_BACKFILLI
 const wipeData = process.argv.some(e => commandLineArgs.WIPE_DATA.includes(e));
 const dropTables = process.argv.some(e => commandLineArgs.DROP_TABLES.includes(e));
 
-const auth = require("./config/auth.json");
 const { bashColors: { none, blue } } = require("./lib/core/Utils");
 const logger = require("./lib/core/Logger");
 const child_process = require("child_process");
 const Client = require("./lib/Client.js");
 const Database = require("./lib/core/CassandraDatabase");
-const backgroundEnv = Object.assign({}, process.env, { BOT_TOKEN: auth.token });
+const backgroundEnv = Object.assign({}, process.env);
 if (process.env.DEBUGGING === "true") {
     logger.setDefaultLevel("debug");
 }
 logger.debug("Env:", backgroundEnv);
 
-async function startup() {
+async function startup(bot_token) {
     await Database.connect({ dropTables, wipeData, createTables: true });
-    const backgroundProcess = child_process.fork("./lib/Background", [], { env: backgroundEnv });
+    const backgroundProcess = child_process.fork("./lib/Background");
     logger.info("Background process PID:" + blue, backgroundProcess.pid, none);
 
-    const client = new Client(auth.token, Database);
+    const client = new Client(bot_token, Database);
     client.connect();
 }
 
-startup();
+if (process.env.EMOTE_BOT_TOKEN) {
+    startup(process.env.EMOTE_BOT_TOKEN);
+} else {
+    console.error("Your bot token is not defined.");
+}
