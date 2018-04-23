@@ -18,11 +18,10 @@ const logger = require("./lib/core/Logger");
 const child_process = require("child_process");
 const Client = require("./lib/Client.js");
 const Database = require("./lib/core/CassandraDatabase");
-const backgroundEnv = Object.assign({}, process.env);
 if (process.env.DEBUGGING === "true") {
     logger.setDefaultLevel("debug");
 }
-logger.debug("Env:", backgroundEnv);
+logger.debug("Env:", process.env);
 
 async function startup(bot_token) {
     await Database.connect({ dropTables, wipeData, createTables: true });
