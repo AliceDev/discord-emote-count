@@ -14,14 +14,19 @@ const wipeData = process.argv.some(e => commandLineArgs.WIPE_DATA.includes(e));
 const dropTables = process.argv.some(e => commandLineArgs.DROP_TABLES.includes(e));
 
 const { bashColors: { none, blue } } = require("./lib/core/Utils");
+const logger = require("./lib/core/Logger");
 const child_process = require("child_process");
 const Client = require("./lib/Client.js");
 const Database = require("./lib/core/CassandraDatabase");
+if (process.env.DEBUGGING === "true") {
+    logger.setDefaultLevel("debug");
+}
+logger.debug("Env:", process.env);
 
 async function startup(bot_token) {
     await Database.connect({ dropTables, wipeData, createTables: true });
     const backgroundProcess = child_process.fork("./lib/Background");
-    console.log("Background process PID:" + blue, backgroundProcess.pid, none);
+    logger.info("Background process PID:" + blue, backgroundProcess.pid, none);
 
     const client = new Client(bot_token, Database);
     client.connect();
