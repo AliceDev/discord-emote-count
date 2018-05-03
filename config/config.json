@@ -4,5 +4,6 @@
     "topNEntries": 5,
     "logChannel": "",
     "statusInterval": 60000,
-    "customRotatingStatuses": []
+    "customRotatingStatuses": [],
+    "developerIDs": []
 }
