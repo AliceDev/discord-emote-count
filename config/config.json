@@ -4,6 +4,7 @@
     "topNEntries": 5,
     "logChannel": "",
     "statusInterval": 60000,
+    "reactToCommands": true,
     "customRotatingStatuses": [],
     "developerIDs": []
 }
