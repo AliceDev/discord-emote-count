@@ -17,7 +17,7 @@ const { bashColors: { none, blue } } = require("./lib/core/Utils");
 const logger = require("./lib/core/Logger");
 const child_process = require("child_process");
 const Client = require("./lib/Client.js");
-const Database = require("./lib/core/CassandraDatabase");
+const Database = require("./lib/core/db/PostgreSQL");
 if (process.env.DEBUGGING === "true") {
     logger.setDefaultLevel("debug");
 }
