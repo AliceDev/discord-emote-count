@@ -38,7 +38,7 @@ If you want to add some flags, you can do so by doing `npm start --` and by addi
 | ----------------- | ----------------------------------------- |
 | `-c`              | Adds colors to some console messages      |
 | `-d` or `--debug` | Enables debugging messages                |
-| `--no-backfill`   | Doesn't go back in time to parse messages |
+| `--no-backfill`   | Disable the parsing of older messages     |
 | `--drop-tables`   | Recreates all tables on bot startup       |
 | `--wipe-data`     | Deletes all data on bot startup           |
 
