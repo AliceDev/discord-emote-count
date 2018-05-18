@@ -2,7 +2,7 @@
     "prefix": "??",
     "considerationPeriod": 15000,
     "maxEntriesLimit": 15,
-    "defaultEntriesLimit": 5,
+    "defaultEntriesLimit": 10,
     "logChannel": "",
     "statusInterval": 60000,
     "reactToCommands": true,
