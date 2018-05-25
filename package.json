@@ -27,12 +27,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Brayzure/discord-emote-count.git"
+    "url": "git+https://github.com/AliceDev/discord-emote-count.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Brayzure/discord-emote-count/issues"
+    "url": "https://github.com/AliceDev/discord-emote-count/issues"
   },
-  "homepage": "https://github.com/Brayzure/discord-emote-count#readme"
+  "homepage": "https://github.com/AliceDev/discord-emote-count#readme"
 }
