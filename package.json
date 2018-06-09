@@ -1,6 +1,6 @@
 {
   "name": "discord-emote-count",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A Discord bot for tracking emote statistics in Discord servers.",
   "main": "index.js",
   "directories": {

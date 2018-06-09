@@ -1,5 +1,8 @@
 # Discord Emote Tracker
-A Discord bot that tracks the usage of emotes within a Discord server. 
+A Discord bot that tracks the usage of emotes within a Discord server.
+
+## Documentation
+Command and bot info can be found [here](https://bots.discord.pw/bots/434126095080488961).
 
 ## Dependencies
 1. Install the database engine (See [the database installation instructions](#database-installation))
