@@ -31,7 +31,7 @@ Then, you'll need to invite the bot on a server
 ## Configuring the bot
 The bot comes with a default configuration file that allows it to work right out of
 the box (once you set your environment variables), but you're able to override this
-behavior. The example [config](./config/config.example.json) file allows you to
+behavior. The [example config](./config/config.example.json) file allows you to
 specify config values in the same way they're defined in the [defaults](./config/default.json).
 Once you've edited the example to your liking, simply rename it to `config.json`.
 
