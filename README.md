@@ -28,7 +28,14 @@ Then, you'll need to invite the bot on a server
 6. Select the server you want the bot to be in
 7. Click the `Authorize` button
 
-Finally, you'l need to run the bot, see the next section for instructions about that.
+## Configuring the bot
+The bot comes with a default configuration file that allows it to work right out of
+the box (once you set your environment variables), but you're able to override this
+behavior. The [example config](./config/config.example.json) file allows you to
+specify config values in the same way they're defined in the [defaults](./config/default.json).
+Once you've edited the example to your liking, simply rename it to `config.json`.
+
+Finally, you'll need to run the bot, see the next section for instructions about that.
 
 ## Running the bot
 1. Open a terminal in the bot's folder
