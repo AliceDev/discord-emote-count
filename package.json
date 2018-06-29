@@ -20,7 +20,9 @@
     "path": "^0.12.7",
     "pg": "^7.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.0.1"
+  },
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
