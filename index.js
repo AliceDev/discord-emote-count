@@ -35,5 +35,5 @@ async function startup(bot_token) {
 if (process.env.EMOTE_BOT_TOKEN) {
     startup(process.env.EMOTE_BOT_TOKEN);
 } else {
-    console.error("Your bot token is not defined.");
+    logger.error("Your bot token is not defined.");
 }
