@@ -5,6 +5,7 @@
     "defaultEntriesLimit": 10,
     "logChannel": "",
     "statusInterval": 60000,
+    "reportInterval": 0,
     "reactToCommands": true,
     "customRotatingStatuses": [],
     "developerIDs": []
